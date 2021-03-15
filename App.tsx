@@ -14,14 +14,12 @@ import {
   StyleSheet,
   ScrollView,
   StatusBar,
-  Text,
 } from 'react-native';
 
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
-
-declare const global: {HermesInternal: null | {}};
+import ACom from './components/a-com';
 
 const App = () => {
   return (
@@ -31,7 +29,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-            <Text>时间的话时间的话</Text>
+          <ACom></ACom>
         </ScrollView>
       </SafeAreaView>
     </>

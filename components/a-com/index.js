@@ -1,17 +1,21 @@
-class ACom extends Component {
-  handleClick = () => {
-      setTimeout(() => {
-          alert(this.props.count);
-      }, 3000);
-  };
+import React, { useState } from 'react';
+import { View, Text, Button } from "react-native";
 
-  render() {
-      return (
-          <div>
-              <h2>Example2</h2>
-              <p>{this.props.count}</p>
-              <button onClick={this.handleClick}>Alert Count</button>
-          </div>
-      );
-  }
+function ACom(props) {
+    const [count, setCount] = useState(0);
+
+    const handleClick = () => {
+        setTimeout(() => {
+            setCount(count + 1)
+        }, 100);
+    };
+    return (
+        <View>
+            <Text>{count}</Text>
+            <Button title="Press me"
+                onPress={handleClick} />
+        </View>
+    );
 }
+
+export default ACom;
