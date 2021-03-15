@@ -14,6 +14,7 @@ import {
   StyleSheet,
   ScrollView,
   StatusBar,
+  Text,
 } from 'react-native';
 
 import {
@@ -30,7 +31,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-
+            <Text>时间的话时间的话</Text>
         </ScrollView>
       </SafeAreaView>
     </>
