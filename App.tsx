@@ -20,6 +20,7 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 import ACom from './components/a-com';
+import { AlCarousel } from './components/al-carousel/al-carousel';
 
 const App = () => {
   return (
@@ -29,7 +30,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <ACom></ACom>
+        <AlCarousel></AlCarousel>  
         </ScrollView>
       </SafeAreaView>
     </>
